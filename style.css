@@ -1,0 +1,77 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+.links a {
+    display: inline-block;
+    background-color: #e0f2f1;
+    color: #00796b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background-color: #00796b;
+    color: white;
+}
+
+
+/* Heading */
+h2 {
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Form inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Password rules text */
+p {
+    font-size: 12px;
+    color: #777777;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}

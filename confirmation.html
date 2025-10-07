@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Confirmation</h2>
+<p>Hello {{ name }}!</p>
+<p>Skill Level: {{ skill_level }}</p>
+<p>Selected Topic: {{ topic }}</p>
+<p>Quiz module will start next!</p>
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Select Topic</h2>
+<form method="POST">
+    <label>Skill Level:</label>
+    <select name="skill_level">
+        {% for level in skill_levels %}
+        <option>{{ level }}</option>
+        {% endfor %}
+    </select><br><br>
+
+    <label>Topic:</label>
+    <select name="topic">
+        {% for category, topic_list in topics.items() %}
+        <optgroup label="{{ category }}">
+            {% for t in topic_list %}
+            <option>{{ t }}</option>
+            {% endfor %}
+        </optgroup>
+        {% endfor %}
+    </select><br><br>
+
+    <button type="submit">Start Quiz</button>
+</form>
+<a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
